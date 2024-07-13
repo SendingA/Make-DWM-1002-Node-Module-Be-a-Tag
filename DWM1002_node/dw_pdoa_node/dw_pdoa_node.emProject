@@ -1,0 +1,241 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="dw_pdoa_node" target="8" version="2">
+  <project Name="dw_pdoa_node">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_linker_heap_size="8192"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="8192"
+      arm_linker_treat_warnings_as_errors="No"
+      arm_simulator_memory_simulation_parameter="RWX 00000000,00100000,FFFFFFFF;RWX 20000000,00010000,CDCDCDCD"
+      arm_target_device_name="nRF52840_xxAA"
+      arm_target_interface_type="SWD"
+      c_preprocessor_definitions="BOARD_CUSTOM;CUSTOM_DW1002_BOARD;CONFIG_GPIO_AS_PINRESET;FLOAT_ABI_HARD;FREERTOS;INITIALIZE_USER_SECTIONS;NO_VTOR_CONFIG;NRF52840_XXAA;DEBUG;CFG_LE_TRILAT=1;CFG_LE_TRILAT_UTILS=1"
+      c_user_include_directories="config;./Src;./Src/Inc;./Src/port;./drivers/deca_driver/port;./drivers/deca_driver;./drivers/10_dof_driver/lis2mdl;./drivers/10_dof_driver/lps22hb;./drivers/10_dof_driver/lsm6dsl;./drivers/10_dof_driver/lsm6dsr;./Src/CMSIS_RTOS;../bsp;../../SDK/components;../../SDK/components/boards;../../SDK/components/drivers_nrf/usbd;../../SDK/components/drivers_nrf/nrf_soc_nosd;../../SDK/components/libraries/atomic;../../SDK/components/libraries/atomic_fifo;../../SDK/components/libraries/balloc;../../SDK/components/libraries/bsp;../../SDK/components/libraries/button;../../SDK/components/libraries/delay;../../SDK/components/libraries/experimental_log;../../SDK/components/libraries/experimental_log/src;../../SDK/components/libraries/experimental_memobj;../../SDK/components/libraries/experimental_section_vars;../../SDK/components/libraries/fifo;../../SDK/components/libraries/log;../../SDK/components/libraries/log/src;../../SDK/components/libraries/memobj;../../SDK/components/libraries/ringbuf;../../SDK/components/libraries/strerror;../../SDK/components/libraries/timer;../../SDK/components/libraries/util;../../SDK/components/libraries/uart;../../SDK/components/libraries/usbd;../../SDK/components/libraries/usbd/config;../../SDK/components/libraries/usbd/class/cdc;../../SDK/components/libraries/usbd/class/cdc/acm;../../SDK/components/toolchain/cmsis/include;../../SDK/external/fprintf;../../SDK/external/segger_rtt;../../SDK/external/utf_converter;../../SDK/external/freertos/source/include;../../SDK/external/freertos/config;../../SDK/external/freertos/portable/ARM/nrf52;../../SDK/external/freertos/portable/CMSIS/nrf52;../../SDK/external/freertos/source/CMSIS_RTOS;../../SDK/integration/nrfx/legacy;../../SDK/integration/nrfx;../../SDK/modules/nrfx;../../SDK/modules/nrfx/drivers;../../SDK/modules/nrfx/drivers/src;../../SDK/modules/nrfx/drivers/include;../../SDK/modules/nrfx/mdk;../../SDK/modules/nrfx/hal"
+      debug_register_definition_file="../../SDK/modules/nrfx/mdk/nrf52840.svd"
+      debug_start_from_entry_point_symbol="No"
+      debug_target_connection="J-Link"
+      gcc_debugging_level="Level 3"
+      gcc_entry_point="Reset_Handler"
+      linker_output_format="hex"
+      linker_printf_fmt_level="long"
+      linker_printf_width_precision_supported="Yes"
+      linker_scanf_fmt_level="long"
+      linker_section_placement_file="flash_placement.xml"
+      linker_section_placement_macros="FLASH_PH_START=0x0;FLASH_PH_SIZE=0x100000;RAM_PH_START=0x20000000;RAM_PH_SIZE=0x40000;FLASH_START=0x0;FLASH_SIZE=0x100000;DEFAULT_CONFIG_START=0x10500;DEFAULT_CONFIG_SIZE=0x400;FCONFIG_START=0x10000;FCONFIG_SIZE=0x400;INIT_START=0x12000;RAM_START=0x20000000;RAM_SIZE=0x40000"
+      linker_section_placements_segments="FLASH RX 0x0 0x100000;RAM RWX 0x20000000 0x40000"
+      macros="CMSIS_CONFIG_TOOL=../../SDK/external_tools/cmsisconfig/CMSIS_Configuration_Wizard.jar"
+      project_directory=""
+      project_type="Executable" />
+    <folder Name="Segger Startup Files">
+      <file file_name="$(StudioDir)/source/thumb_crt0.s" />
+    </folder>
+    <folder Name="nRF_Log">
+      <file file_name="../../SDK/components/libraries/log/src/nrf_log_frontend.c" />
+      <file file_name="../../SDK/components/libraries/log/src/nrf_log_str_formatter.c" />
+      <file file_name="../../SDK/components/libraries/log/src/nrf_log_backend_rtt.c" />
+      <file file_name="../../SDK/components/libraries/log/src/nrf_log_backend_serial.c" />
+      <file file_name="../../SDK/components/libraries/log/src/nrf_log_backend_uart.c" />
+      <file file_name="../../SDK/components/libraries/log/src/nrf_log_default_backends.c" />
+    </folder>
+    <folder Name="Board Definition">
+      <file file_name="../../SDK/components/boards/boards.c" />
+    </folder>
+    <folder Name="freeRTOS">
+      <file file_name="../../SDK/external/freertos/source/croutine.c" />
+      <file file_name="../../SDK/external/freertos/source/event_groups.c" />
+      <file file_name="../../SDK/external/freertos/source/list.c" />
+      <file file_name="../../SDK/external/freertos/portable/GCC/nrf52/port.c" />
+      <file file_name="../../SDK/external/freertos/portable/CMSIS/nrf52/port_cmsis.c" />
+      <file file_name="../../SDK/external/freertos/portable/CMSIS/nrf52/port_cmsis_systick.c" />
+      <file file_name="../../SDK/external/freertos/source/queue.c" />
+      <file file_name="../../SDK/external/freertos/source/stream_buffer.c" />
+      <file file_name="../../SDK/external/freertos/source/tasks.c" />
+      <file file_name="../../SDK/external/freertos/source/timers.c" />
+      <file file_name="../../SDK/external/freertos/source/portable/MemMang/heap_4.c" />
+    </folder>
+    <folder Name="nRF_Libraries">
+      <file file_name="../../SDK/components/libraries/button/app_button.c" />
+      <file file_name="../../SDK/components/libraries/util/app_error.c" />
+      <file file_name="../../SDK/components/libraries/util/app_error_handler_gcc.c" />
+      <file file_name="../../SDK/components/libraries/util/app_error_weak.c" />
+      <file file_name="../../SDK/components/libraries/timer/app_timer_freertos.c" />
+      <file file_name="../../SDK/components/libraries/util/app_util_platform.c" />
+      <file file_name="../../SDK/components/libraries/util/nrf_assert.c" />
+      <file file_name="../../SDK/components/libraries/atomic/nrf_atomic.c" />
+      <file file_name="../../SDK/components/libraries/balloc/nrf_balloc.c" />
+      <file file_name="../../SDK/external/fprintf/nrf_fprintf.c" />
+      <file file_name="../../SDK/external/fprintf/nrf_fprintf_format.c" />
+      <file file_name="../../SDK/components/libraries/memobj/nrf_memobj.c" />
+      <file file_name="../../SDK/components/libraries/ringbuf/nrf_ringbuf.c" />
+      <file file_name="../../SDK/components/libraries/strerror/nrf_strerror.c" />
+      <file file_name="../../SDK/components/libraries/uart/app_uart_fifo.c" />
+      <file file_name="../../SDK/components/libraries/fifo/app_fifo.c" />
+      <file file_name="../../SDK/components/libraries/usbd/app_usbd.c" />
+      <file file_name="../../SDK/components/libraries/usbd/app_usbd_core.c" />
+      <file file_name="../../SDK/components/libraries/usbd/app_usbd_serial_num.c" />
+      <file file_name="../../SDK/components/libraries/usbd/app_usbd_string_desc.c" />
+      <file file_name="../../SDK/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c" />
+      <file file_name="../../SDK/external/utf_converter/utf.c" />
+      <file file_name="../../SDK/components/libraries/bsp/bsp.c" />
+    </folder>
+    <folder Name="nRF_Drivers">
+      <file file_name="../../SDK/integration/nrfx/legacy/nrf_drv_clock.c" />
+      <file file_name="../../SDK/components/drivers_nrf/nrf_soc_nosd/nrf_soc.c" />
+      <file file_name="../../SDK/modules/nrfx/soc/nrfx_atomic.c" />
+      <file file_name="../../SDK/modules/nrfx/drivers/src/nrfx_clock.c" />
+      <file file_name="../../SDK/modules/nrfx/drivers/src/nrfx_gpiote.c" />
+      <file file_name="../../SDK/modules/nrfx/drivers/src/nrfx_rtc.c" />
+      <file file_name="../../SDK/modules/nrfx/drivers/src/nrfx_power.c" />
+      <file file_name="../../SDK/modules/nrfx/drivers/src/nrfx_spim.c" />
+      <file file_name="../../SDK/modules/nrfx/drivers/src/nrfx_systick.c" />
+      <file file_name="../../SDK/modules/nrfx/drivers/src/nrfx_twi.c" />
+      <file file_name="../../SDK/modules/nrfx/drivers/src/nrfx_wdt.c" />
+      <file file_name="../../SDK/modules/nrfx/hal/nrf_nvmc.c" />
+      <file file_name="../../SDK/integration/nrfx/legacy/nrf_drv_spi.c" />
+      <file file_name="../../SDK/modules/nrfx/drivers/src/nrfx_usbd.c" />
+      <file file_name="../../SDK/integration/nrfx/legacy/nrf_drv_power.c" />
+      <file file_name="../../SDK/integration/nrfx/legacy/nrf_drv_twi.c" />
+      <file file_name="../../SDK/integration/nrfx/legacy/nrf_drv_uart.c" />
+      <file file_name="../../SDK/modules/nrfx/drivers/src/nrfx_uart.c" />
+      <file file_name="../../SDK/modules/nrfx/drivers/src/nrfx_uarte.c" />
+      <file file_name="../../SDK/modules/nrfx/drivers/src/prs/nrfx_prs.c" />
+      <file file_name="../../SDK/modules/nrfx/drivers/src/nrfx_spi.c" />
+      <file file_name="../../SDK/components/drivers_nrf/nrf_soc_nosd/nrf_nvic.c" />
+    </folder>
+    <folder Name="Device">
+      <file file_name="../../SDK/modules/nrfx/mdk/ses_startup_nrf52840.s" />
+      <file file_name="../../SDK/modules/nrfx/mdk/ses_startup_nrf_common.s" />
+      <file file_name="../../SDK/modules/nrfx/mdk/system_nrf52840.c" />
+    </folder>
+    <folder Name="Src">
+      <file file_name="Src/main.c" />
+      <folder Name="CMSIS">
+        <file file_name="Src/CMSIS_RTOS/cmsis_os.c" />
+        <folder Name="Inc">
+          <file file_name="Src/CMSIS_RTOS/cmsis_os.h" />
+        </folder>
+      </folder>
+      <folder Name="Inc">
+        <file file_name="Src/Inc/task_node.h" />
+        <file file_name="Src/Inc/task_tcfm.h" />
+        <file file_name="Src/Inc/task_tcwm.h" />
+        <file file_name="Src/Inc/task_test.h" />
+        <file file_name="Src/Inc/task_usb2spi.h" />
+        <file file_name="Src/Inc/tcfm.h" />
+        <file file_name="Src/Inc/tcwm.h" />
+        <file file_name="Src/Inc/test_fn.h" />
+        <file file_name="Src/Inc/translate.h" />
+        <file file_name="Src/Inc/usb_uart_rx.h" />
+        <file file_name="Src/Inc/usb_uart_tx.h" />
+        <file file_name="Src/Inc/usb2spi.h" />
+        <file file_name="Src/Inc/util.h" />
+        <file file_name="Src/Inc/uwb_frames.h" />
+        <file file_name="Src/Inc/version.h" />
+        <file file_name="Src/Inc/circ_buf.h" />
+        <file file_name="Src/Inc/cmd.h" />
+        <file file_name="Src/Inc/cmd_fn.h" />
+        <file file_name="Src/Inc/config.h" />
+        <file file_name="Src/Inc/deca_sleep.h" />
+        <file file_name="Src/Inc/default_config.h" />
+        <file file_name="Src/Inc/dw_pdoa_node_common.h" />
+        <file file_name="Src/Inc/error.h" />
+        <file file_name="Src/Inc/imusensor_10dof_interface.h" />
+        <file file_name="Src/Inc/lsm9ds1.h" />
+        <file file_name="Src/Inc/lsm9ds1_spi.h" />
+        <file file_name="Src/Inc/main.h" />
+        <file file_name="Src/Inc/msg_time.h" />
+        <file file_name="Src/Inc/node.h" />
+        <file file_name="Src/Inc/port.h" />
+        <file file_name="Src/Inc/stationary.h" />
+        <file file_name="Src/Inc/tag_list.h" />
+        <file file_name="Src/Inc/task_ctrl.h" />
+        <file file_name="Src/Inc/task_flush.h" />
+        <file file_name="Src/Inc/task_imu.h" />
+      </folder>
+      <folder Name="bare">
+        <file file_name="Src/bare/json_2pc.c" />
+        <file file_name="Src/bare/node.c" />
+        <file file_name="Src/bare/stationary.c" />
+        <file file_name="Src/bare/tag_list.c" />
+        <file file_name="Src/bare/tcfm.c" />
+        <file file_name="Src/bare/tcwm.c" />
+        <file file_name="Src/bare/test_fn.c" />
+        <file file_name="Src/bare/usb_uart_rx.c" />
+        <file file_name="Src/bare/usb_uart_tx.c" />
+        <file file_name="Src/bare/usb2spi.c" />
+        <file file_name="Src/bare/cmd.c" />
+        <file file_name="Src/bare/cmd_fn.c" />
+        <file file_name="Src/bare/config.c" />
+        <file file_name="Src/bare/imusensor_10dof_interface.c" />
+      </folder>
+      <folder Name="port">
+        <file file_name="Src/port/deca_usb.c" />
+        <file file_name="Src/port/dw1000_rbct.c" />
+        <file file_name="Src/port/port_platform.c" />
+        <file file_name="Src/port/deca_uart.c" />
+        <folder Name="Inc">
+          <file file_name="Src/port/port_platform.h" />
+        </folder>
+      </folder>
+      <folder Name="task">
+        <file file_name="Src/task/task_ctrl.c" />
+        <file file_name="Src/task/task_flush.c" />
+        <file file_name="Src/task/task_imu.c" />
+        <file file_name="Src/task/task_tcfm.c" />
+        <file file_name="Src/task/task_tcwm.c" />
+        <file file_name="Src/task/task_test.c" />
+        <file file_name="Src/task/task_usb2spi.c" />
+        <file file_name="Src/task/task_node.c" />
+      </folder>
+      <folder Name="utils">
+        <file file_name="Src/utils/translate.c" />
+        <file file_name="Src/utils/util.c" />
+        <file file_name="Src/utils/msg_time.c" />
+      </folder>
+      <file file_name="Src/dw_pdoa_node_common.c" />
+    </folder>
+    <folder Name="Config">
+      <file file_name="config/FreeRTOSConfig.h" />
+      <file file_name="config/sdk_config.h" />
+      <file file_name="../bsp/custom_board.h" />
+    </folder>
+    <folder Name="10_dof_driver">
+      <folder Name="Inc">
+        <file file_name="drivers/10_dof_driver/lis2mdl/lis2mdl.h" />
+        <file file_name="drivers/10_dof_driver/lps22hb/lps22hb.h" />
+        <file file_name="drivers/10_dof_driver/lps22hb/lps22hb_reg.h" />
+        <file file_name="drivers/10_dof_driver/lsm6dsl/lsm6dsl.h" />
+        <file file_name="drivers/10_dof_driver/lsm6dsr/lsm6dsr.c" />
+      </folder>
+      <file file_name="drivers/10_dof_driver/lis2mdl/lis2mdl.c" />
+      <file file_name="drivers/10_dof_driver/lps22hb/lps22hb.c" />
+      <file file_name="drivers/10_dof_driver/lsm6dsl/lsm6dsl.c" />
+      <file file_name="drivers/10_dof_driver/lsm6dsr/lsm6dsr.h" />
+    </folder>
+    <folder Name="deca_driver">
+      <folder Name="Inc">
+        <file file_name="drivers/deca_driver/deca_device_api.h" />
+        <file file_name="drivers/deca_driver/deca_param_types.h" />
+        <file file_name="drivers/deca_driver/deca_regs.h" />
+        <file file_name="drivers/deca_driver/deca_types.h" />
+        <file file_name="drivers/deca_driver/deca_version.h" />
+      </folder>
+      <file file_name="drivers/deca_driver/deca_params_init.c" />
+      <file file_name="drivers/deca_driver/deca_device.c" />
+    </folder>
+  </project>
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_optimization_level="Level 3" />
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG; DEBUG_NRF"
+    gcc_optimization_level="Debug" />
+</solution>

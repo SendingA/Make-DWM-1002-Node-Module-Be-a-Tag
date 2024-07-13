@@ -1,0 +1,85 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <BreakpointListItem trigger="" line="100" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../../main.c" useHWbreakpoint="false"/>
+  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
+ </FrameBufferWindow>
+ <Memory1>
+  <MemoryWindow addressSpace="" dataSize="4" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="spi_pca10056" radix="16" sizeText="800" addressText="0x20014550"/>
+ </Memory1>
+ <Memory2>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="spi_pca10056" radix="16" sizeText="" addressText="0x200054f8"/>
+ </Memory2>
+ <Memory3>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="spi_pca10056" radix="16" sizeText="" addressText=""/>
+ </Memory3>
+ <Memory4>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="spi_pca10056" radix="16" sizeText="" addressText=""/>
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="spi_pca10056"/>
+  <ProjectSessionItem path="spi_pca10056;spi_pca10056"/>
+  <ProjectSessionItem path="spi_pca10056;spi_pca10056;Application"/>
+  <ProjectSessionItem path="spi_pca10056;spi_pca10056;Board Support"/>
+  <ProjectSessionItem path="spi_pca10056;spi_pca10056;nRF_Drivers"/>
+  <ProjectSessionItem path="spi_pca10056;spi_pca10056;nRF_Log"/>
+ </Project>
+ <Register1>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal;SPIM0/TASKS_START;SPIM0/TASKS_STOP;SPIM0/TASKS_SUSPEND;SPIM0/TASKS_RESUME;SPIM0/EVENTS_STOPPED;SPIM0/EVENTS_ENDRX;SPIM0/EVENTS_END;SPIM0/EVENTS_ENDTX;SPIM0/EVENTS_STARTED;SPIM0/SHORTS;SPIM0/INTENSET;SPIM0/INTENCLR;SPIM0/STALLSTAT;SPIM0/ENABLE;SPIM0/FREQUENCY;SPIM0/CONFIG;SPIM0/CSNPOL;SPIM0/PSELDCX;SPIM0/DCXCNT;SPIM0/ORC;SPIM0/PSEL.SCK;SPIM0/PSEL.MOSI;SPIM0/PSEL.MISO;SPIM0/PSEL.CSN;SPIM0/RXD.PTR;SPIM0/RXD.MAXCNT;SPIM0/RXD.AMOUNT;SPIM0/RXD.LIST;SPIM0/TXD.PTR;SPIM0/TXD.MAXCNT;SPIM0/TXD.AMOUNT;SPIM0/TXD.LIST;SPIM0/IFTIMING.RXDELAY;SPIM0/IFTIMING.CSNDUR" binaryNodes="" asciiNodes="" openNodes="SPIM0" name="spi_pca10056" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register1>
+ <Register2>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="spi_pca10056" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register2>
+ <Register3>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="spi_pca10056" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register3>
+ <Register4>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="spi_pca10056" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register4>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never">
+   <Watchpoint expression="spi" name="spi" radix="-1" linenumber="100" filename="../../../main.c"/>
+   <Watchpoint expression="m_length" name="m_length" radix="16" linenumber="100" filename="../../../main.c"/>
+   <Watchpoint expression="spi_config" name="spi_config" radix="-1" linenumber="83" filename="../../../main.c"/>
+   <Watchpoint expression="p_instance" name="p_instance" radix="-1" linenumber="98" filename="../../../../../../integration/nrfx/legacy/nrf_drv_spi.c"/>
+   <Watchpoint expression="p_config" name="p_config" radix="-1" linenumber="99" filename="../../../../../../integration/nrfx/legacy/nrf_drv_spi.c"/>
+  </Watches>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="52" y="51" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../main.c" selected="0" top="34" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="227" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../components/boards/boards.c" selected="0" top="204" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/bsp/bsp.c" selected="0" top="48" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="275" useTextEdit="1" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="0" top="256" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="122" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../integration/nrfx/legacy/nrf_drv_spi.h" selected="1" top="104" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="71" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../integration/nrfx/legacy/nrf_drv_spi.c" selected="0" top="53" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="658" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/drivers/src/nrfx_spim.c" selected="0" top="653" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="112" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/log/nrf_log.h" selected="0" top="94" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="260" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/log/src/nrf_log_internal.h" selected="0" top="242" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="749" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/log/src/nrf_log_frontend.c" selected="0" top="729" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="428" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../components/toolchain/cmsis/include/cmsis_gcc.h" selected="0" top="410" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="39" y="85" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/drivers/include/nrfx_spim.h" selected="0" top="62" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="174" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/mdk/nrf52840_peripherals.h" selected="0" top="155" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="560" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/hal/nrf_spim.h" selected="0" top="541" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="spi_pca10056" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/aivanov/workspace/2019/apprepo/dwm3002/examples/dw_pdoa_node/Src/platform_nrf52840/port" debugSearchPath="" autoConnectCapabilities="3199"/>
+</session>

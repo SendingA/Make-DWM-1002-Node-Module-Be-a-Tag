@@ -1,0 +1,53 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
+ </FrameBufferWindow>
+ <Memory1/>
+ <Memory2/>
+ <Memory3/>
+ <Memory4/>
+ <Project>
+  <ProjectSessionItem path="blinky_rtc_FreeRTOS_pca10056"/>
+  <ProjectSessionItem path="blinky_rtc_FreeRTOS_pca10056;blinky_rtc_FreeRTOS_pca10056"/>
+  <ProjectSessionItem path="blinky_rtc_FreeRTOS_pca10056;blinky_rtc_FreeRTOS_pca10056;Application"/>
+  <ProjectSessionItem path="blinky_rtc_FreeRTOS_pca10056;blinky_rtc_FreeRTOS_pca10056;None"/>
+  <ProjectSessionItem path="blinky_rtc_FreeRTOS_pca10056;blinky_rtc_FreeRTOS_pca10056;nRF_Libraries"/>
+ </Project>
+ <Register1/>
+ <Register2/>
+ <Register3/>
+ <Register4/>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never"/>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="13" y="53" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../main.c" selected="0" top="29" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="117" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/mdk/ses_startup_nrf52840.s" selected="0" top="117" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="18" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/timer/app_timer_freertos.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="0" top="21" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="56" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../../../../external/freertos/source/include/FreeRTOS.h" selected="0" top="30" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../config/FreeRTOSConfig.h" selected="1" top="0" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="blinky_rtc_FreeRTOS_pca10056" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/avishniakov/Documents/workspace/DWM3002/SDK16/examples/dw_pdoa_node/Src/CMSIS_RTOS" debugSearchPath="" autoConnectCapabilities="3199"/>
+</session>
