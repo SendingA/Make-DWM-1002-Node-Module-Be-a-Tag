@@ -453,7 +453,7 @@ static void BlinkTask(void const * arg)
     }while(!(p = getTwrInfoPtr()));    //wait for initialisation of pTwrInfo
 
 
-    // do {
+    do {
         osMutexRelease(app.blinkTask.MutexId);
 
         osSignalWait(app.blinkTask.Signal, osWaitForever);
@@ -462,7 +462,7 @@ static void BlinkTask(void const * arg)
 
         initiator_send_blink(p);
 
-    // }while(1);
+    }while(1);
 
     UNUSED(arg);
 }
@@ -548,9 +548,22 @@ void tag_helper(void const *argument)
         error_handler(1, tmp);
     }
 
-    tag_setup_tasks();
+    //tag_setup_tasks();
 
-    node_process_start();
+    //while(1){
+        initiator_send_blink();
+    //}
+ 
+        for(int i=0; i<6; i++)
+    {
+        nrf_gpio_pin_toggle(LED_STATIONARY);
+        nrf_gpio_pin_toggle(LED_NODE);
+        nrf_gpio_pin_toggle(LED_USB);  
+        nrf_gpio_pin_toggle(LED_ERROR);
+        nrf_delay_ms(250);
+    }
+
+    //node_process_start();
 
 }
 

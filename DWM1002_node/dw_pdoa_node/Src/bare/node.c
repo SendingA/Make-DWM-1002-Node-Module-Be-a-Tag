@@ -207,12 +207,12 @@ tx_start(tx_pckt_t * pTxPckt)
 }
 
 
-error_e initiator_send_blink(void const *argument)
+error_e initiator_send_blink()
 {
     error_e       ret;
     tx_pckt_t     txPckt;
 
-    memset(&txPckt, 0, sizeof(txPckt));
+    //memset(&txPckt, 0, sizeof(txPckt));
 
     blink_msg_t *pTxMsg = &txPckt.msg.blinkMsg;
 

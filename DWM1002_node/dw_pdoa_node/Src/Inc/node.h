@@ -352,7 +352,7 @@ error_e node_process_init(int masterChip);
 void    node_process_start(void);
 void    node_process_terminate(void);
 
-error_e initiator_send_blink(void const *argument);
+error_e initiator_send_blink();
 error_e tof2range(param_block_t*, float*, int32_t);
 void    pdoa2XY(result_t *, float);
 float   calcPD(pdoa_info_t *pA);

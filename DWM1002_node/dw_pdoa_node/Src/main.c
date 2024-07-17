@@ -203,7 +203,7 @@ void DefaultTask(void const * argument)
     // Add the parameter mamually 
     if (app.pConfig->s.autoStartEn == 1)
     {
-        xEventGroupSetBits(app.xStartTaskEvent, Ev_Node_A_Task);    /**< activate Node task */
+        xEventGroupSetBits(app.xStartTaskEvent, Ev_Tag_Task);    /**< activate Node task */
     }
     else if (app.pConfig->s.autoStartEn == 2)
     {
@@ -211,7 +211,7 @@ void DefaultTask(void const * argument)
     }   
     else if (app.pConfig->s.autoStartEn == 3)
     {
-        xEventGroupSetBits(app.xStartTaskEvent, Ev_Tag_Task);       /**< activate Tag task */
+        xEventGroupSetBits(app.xStartTaskEvent, Ev_Node_A_Task);       /**< activate Tag task */
     }
 
     /* Infinite loop: this is the helper task, which starts appropriate mode */
